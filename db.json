@@ -1,0 +1,51 @@
+{
+  "login": [
+    {
+      "status": "true",
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "username": "test",
+      "password": "test123"
+    }
+  ],
+  "hotellist": [
+    {
+    "Hotel Name": "Shree Ganesha",
+    "Hotel City":"Panji",
+    "Hotel State":"Goa",
+    "Hotel Rating":"4.5",
+    "Hotel Rating Text":"Excellent",
+    "Hotel Rate":"999",
+    "Hotel Images":"https://images.rosewoodhotels.com/is/image/rwhg/panoramic-ocean-view-suite-bedroom:TALL-LARGE-9-16"
+  },
+  {
+    "Hotel Name": "Beleza De Goa - Calangute",
+    "Hotel City":"Calangute",
+    "Hotel State":"Goa",
+    "Hotel Rating":"4.6",
+    "Hotel Rating Text":"Excellent",
+    "Hotel Rate":"944",
+    "Hotel Images":"https://images.rosewoodhotels.com/is/image/rwhg/panoramic-ocean-view-suite-bedroom:TALL-LARGE-9-16"
+  },
+  {
+    "Hotel Name": "Moustache Goa Luxuria",
+    "Hotel City":"Panji",
+    "Hotel State":"Goa",
+    "Hotel Rating":"4.0",
+    "Hotel Rating Text":"Good",
+    "Hotel Rate":"998",
+    "Hotel Images":"https://images.rosewoodhotels.com/is/image/rwhg/panoramic-ocean-view-suite-bedroom:TALL-LARGE-9-16"
+  },
+  {
+    "Hotel Name": "Bogmallo Beach Resort",
+    "Hotel City":"Panji",
+    "Hotel State":"Goa",
+    "Hotel Rating":"4.2",
+    "Hotel Rating Text":"Good",
+    "Hotel Rate":"978",
+    "Hotel Images":"https://images.rosewoodhotels.com/is/image/rwhg/panoramic-ocean-view-suite-bedroom:TALL-LARGE-9-16"
+  }
+ ]
+}

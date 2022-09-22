@@ -1,0 +1,57 @@
+<div class="card">
+    <div class="card-header">
+      <strong>Hotel Info</strong>
+    </div>
+    <div class="card-body">
+        <form action="" method="post" [formGroup]="HotelInfoForm">
+<div class="form-group container">
+  <label for="hotelOwnerName">Hotel  Name</label>
+  <select class="form-control" id="hotelname" name="hotelname" formControlName="hotelname" class="form-control" >
+    <option *ngFor="let data of hotelDetails" value="{{data.hotelname}}" > {{data.hotelname}}</option>
+  </select>
+  <!-- <input type="text" id="hotelname" name="hotelname" formControlName="hotelname" class="form-control" placeholder="Enter Hotel Name" autocomplete="hotelownerName"> -->
+</div>
+<div class="form-group container">
+  <label for="hotelOwnerName">Hotel  Name</label>
+  <select class="form-control" id="status" name="status" formControlName="status" class="form-control" >
+    <option value="active">Active</option>
+    <option value="inactive">InActive</option>
+  </select>
+  <!-- <input type="text" id="hotelname" name="hotelname" formControlName="hotelname" class="form-control" placeholder="Enter Hotel Name" autocomplete="hotelownerName"> -->
+</div>
+<div class="form-group container">
+  <label for="mobilenumber"> Availaible Single Room</label>
+  <input type="text" id="singleroom" name="singleroom" formControlName="singleroom" class="form-control" placeholder="Availaible Single Room.." autocomplete="mobilenumber">
+</div>
+<div class="form-group container">
+  <label for="mobilenumber">Single Room Price</label>
+  <input type="text" id="singleroomprice" name="singleroomprice" formControlName="singleroomprice" class="form-control" placeholder="Availaible Single Room.." autocomplete="mobilenumber">
+</div>
+<div class="form-group container">
+  <label for="email">Availaible Double Room</label>
+  <input type="text" id="doubleroom" name="doubleroom" class="form-control" formControlName="doubleroom" placeholder="Availaible Double Room.." autocomplete="email">
+</div>
+<div class="form-group container">
+  <label for="email">Double Room Price</label>
+  <input type="text" id="doubleroomprice" name="doubleroomprice" class="form-control" formControlName="doubleroomprice" placeholder="Double Room Price..">
+</div>
+<div class="form-group container">
+    <label for="ownerAddL1">Availaible Family Room</label>
+    <input type="text" id="familyroom" name="familyroom" formControlName="familyroom" class="form-control" placeholder="Availaible Family Room.." autocomplete="familyroom">
+  </div>
+  <div class="form-group container">
+    <label for="ownerAddL1">Availaible Family Room</label>
+    <input type="text" id="familyroomprice" name="familyroomprice" formControlName="familyroomprice" class="form-control" placeholder="Family Room Price.." autocomplete="familyroom">
+  </div>
+  <div class="form-group container">
+    <label for="ownerCity">Hotel Rating</label>
+    <input type="text" id="hotelrating" name="hotelrating" formControlName="hotelrating" class="form-control" placeholder="Hotel Rating.." autocomplete="ownercity">
+  </div>
+ 
+  <div class="card-footer">
+    <button type="submit" class="btn btn-sm btn-primary" (click)="addHotelInfo(HotelInfoForm.value)"><i class="fa fa-dot-circle-o"></i> Submit</button>
+   
+  </div>
+</form>
+</div>
+</div>

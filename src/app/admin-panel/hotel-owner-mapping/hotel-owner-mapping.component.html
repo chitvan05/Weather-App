@@ -1,0 +1,59 @@
+<div class="card">
+    <form action="" method="post" [formGroup]="formMapping">
+        <div class="row card-body container">
+            <div class="form-group container row">
+                <br>
+                <div class="col-md-1"> </div>
+                <div class="form-group container">
+                    <label for="hotelOwnerName">Hotel Name</label>
+                    <select class="form-control" id="hotelname" name="hotelname" formControlName="hotelname"
+                        class="form-control">
+                        <option *ngFor="let data of hotelDetails" value="{{data.hotelname}}">{{data.hotelname}}</option>
+                    </select>
+                    <!-- <input type="text" id="hotelname" name="hotelname" formControlName="hotelname" class="form-control" placeholder="Enter Hotel Name" autocomplete="hotelownerName"> -->
+                </div>
+                <div class="form-group container">
+                    <label for="hotelOwnerName">Owner Phone</label>
+                    <select class="form-control" id="username" name="username" formControlName="username"
+                        class="form-control" (change)="setOwnerName($event.target.value)">
+                        <option *ngFor="let data of ownerDetails" value="{{data.ownerphone}}" >{{data.ownerphone}}</option>
+                    </select>
+                </div>
+                <div class="form-group container">
+                    <label for="hotelOwnerName">Owner Name</label>
+                    <input type="text" id="ownername" name="ownername" formControlName="ownername" class="form-control"
+                        readonly>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-sm btn-primary" (click)="mapHotel(formMapping.value)">Map Hotel and Owner</button>
+                </div>
+            </div>
+
+        </div>
+        <!--/.row-->
+
+        <div class="card-body container">
+            <table class="table table-bordered table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>SR NO</th>
+                        <th>Hotel Name</th>
+                        <th>Owner Phone</th>
+                        <th>Owner Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of mappingList; let i = index">
+
+                        <td>{{i + 1}}</td>
+                        <td>{{data.hotelname}}</td>
+                        <td>{{data.username}}</td>
+                        <td>{{data.ownername}}</td>
+                        <td><button type="button" class="btn  btn-outline-primary active fa fa-edit"></button></td>
+                        <td><button type="button" class="btn  btn-outline-danger active fa fa-close"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="row card-body container">
+        <div class="form-group container row">
+            <br>
+            <div class="col-md-1"> </div>
+            <div class="col-md-4">
+                <input type="Text" id="city" name="city"  [(ngModel)]="cityName" class="form-control" placeholder="Add New City" >
+            </div>
+            <div class="col-md-4"> 
+                <button  type="button" class="btn btn-sm btn-primary" (click)="addCity()"> Add City</button>
+            </div>
+          </div>
+  
+    </div><!--/.row-->
+    
+    <div class="card-body container">
+        <table class="table table-bordered table-striped table-sm">
+            <thead>
+              <tr >
+                <th>SR NO</th>
+                <th>City</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of cityList; let i = index">
+                
+                <td>{{i + 1}}</td>
+                <td>{{data.cityname}} </td>
+                <td><button type="button" class="btn  btn-outline-primary active fa fa-edit"></button></td>
+                <td><button type="button" class="btn  btn-outline-danger active fa fa-close"></button></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>

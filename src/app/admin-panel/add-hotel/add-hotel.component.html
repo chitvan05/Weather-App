@@ -1,0 +1,119 @@
+<div class="card">
+    <div class="card-header">
+      <strong>Add Hotel Details</strong> 
+    </div>
+    <div class="card-body">
+      <form action="" method="post" [formGroup]="addHotelForm"> 
+        <div class="form-group container">
+          <label for="hotelName">Hotel Name</label>
+          <input type="text" id="hotelName" name="hotelName" formControlName="hotelName" class="form-control" placeholder="Enter Hotel Name..">  
+        </div>
+        <div class="form-group container">
+          <label for="hotelName">Status</label>
+          <input type="text" id="status" name="status" formControlName="status" class="form-control" [value]="inactive" readonly>  
+        </div>
+        <!-- <div class="form-group container">
+          <label for="hotelLocation">Location</label>
+          <input type="Text" id="hotelLocation" name="hotelLocation" formControlName="hotelLocation"  class="form-control" placeholder="Enter Hotel Location.." autocomplete="hotel-location">
+        </div> -->
+        <div class="form-group container">
+            <label for="nf-password">Address Line 1</label>
+            <input type="text" id="HotelAddressL1" name="HotelAddressL1" formControlName="HotelAddressL1"  class="form-control" placeholder="Enter Location.." autocomplete="hoteladdressL1">
+          </div>
+          <div class="form-group container">
+            <label for="HotelAddressL2">Address Line 2</label>
+            <input type="text" id="HotelAddressL2" name="HotelAddressL2" formControlName="HotelAddressL2" class="form-control" placeholder="Enter Location.." autocomplete="hoteladdressL2">
+          </div>
+          <div class="form-group container">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" class="form-control" formControlName="state" placeholder="Enter Location.." autocomplete="state">
+          </div>
+          <div class="form-group container">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" class="form-control" formControlName="city" placeholder="Enter Location.." autocomplete="city">
+          </div>
+          <div class="form-group container">
+            <label for="pincode">Pincode</label>
+            <input type="number" id="pincode" name="pincode" formControlName="pincode" class="form-control" placeholder="Enter Location.." autocomplete="pincode">
+          </div>
+
+
+
+        <!-- <div class="card">
+            <div class="card-header">
+              Hotel Owner Details
+            </div>
+            <div class="card-body">
+                In the section below, please add the Hotel Owner details.
+            </div>
+        <div class="form-group container">
+          <label for="hotelOwnerName">Hotel Owner Name</label>
+          <input type="text" id="hotelOwnerName" name="hotelOwnerName" formControlName="hotelOwnerName" class="form-control" placeholder="Enter Profile.." autocomplete="hotelownerName">
+        </div>
+        <div class="form-group container">
+          <label for="mobilenumber">Mobile No</label>
+          <input type="text" id="mobilenumber" name="mobilenumber" formControlName="mobilenumber" class="form-control" placeholder="Enter Location.." autocomplete="mobilenumber">
+        </div>
+        <div class="form-group container">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" formControlName="email" placeholder="Enter Location.." autocomplete="email">
+        </div>
+        <div class="form-group container">
+            <label for="ownerAddL1">Address Line 1</label>
+            <input type="text" id="ownerAddL1" name="ownerAddL1" formControlName="ownerAddL1" class="form-control" placeholder="Enter Location.." autocomplete="ownerAddL1">
+          </div>
+          <div class="form-group container">
+            <label for="ownerAddL2">Address Line 2</label>
+            <input type="text" id="ownerAddL2" name="ownerAddL2" formControlName="ownerAddL2" class="form-control" placeholder="Enter Location.." autocomplete="ownerAddL2">
+          </div>
+          <div class="form-group container">
+            <label for="ownerState">State</label>
+            <input type="text" id="ownerState" name="ownerState" formControlName="ownerState" class="form-control" placeholder="Enter Location.." autocomplete="ownerstate">
+          </div>
+          <div class="form-group container">
+            <label for="ownerCity">City</label>
+            <input type="text" id="ownerCity" name="ownerCity" formControlName="ownerCity" class="form-control" placeholder="Enter Location.." autocomplete="ownercity">
+          </div>
+          <div class="form-group container">
+            <label for="ownerPincode">Pincode</label>
+            <input type="text" id="ownerPincode" name="ownerPincode" formControlName="ownerPincode" class="form-control" placeholder="Enter Location.." autocomplete="ownerpincode">
+          </div>
+        </div>
+          <div class="card">
+            <div class="card-header">
+              Payment Info
+            </div>
+            <div class="card-body">
+                In the section below, please add the payment details  where you are expecting the booking amount to be credited
+            </div>
+
+            <div class="form-group container">
+                <label for="accountNumber">Account Number</label>
+                <input type="text" id="accountNumber" name="accountNumber" formControlName="accountNumber" class="form-control" placeholder="Enter Location.." autocomplete="accountNumber">
+            </div>
+            <div class="form-group container">
+                <label for="accountHolderName">Account Holder Name</label>
+                <input type="text" id="accountHolderName" name="accountHolderName" formControlName="accountHolderName" class="form-control" placeholder="Enter Location.." autocomplete="accountHolderName">
+            </div>
+            <div class="form-group container">
+                <label for="ifscCode">IFSC Code</label>
+                <input type="text" id="ifscCode" name="ifscCode" formControlName="ifscCode" class="form-control" placeholder="Enter Location.." autocomplete="ifscCode">
+            </div>
+            <div class="form-group container">
+                <label for="branchName">Branch Name</label>
+                <input type="text" id="branchName" name="branchName" formControlName="branchName" class="form-control" placeholder="Enter Location.." autocomplete="branchName">
+            </div>
+            <div class="form-group container">
+                <label for="micrCode">MICR Code</label>
+                <input type="text" id="micrCode" name="micrCode" formControlName="micrCode" class="form-control" placeholder="Enter Location.." autocomplete="micrCode">
+            </div>
+          </div> -->
+
+      </form>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-sm btn-primary" (click)="addHotelDetails(addHotelForm.value)"><i class="fa fa-dot-circle-o"></i> Submit</button>
+      <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+    </div>
+
+</div>

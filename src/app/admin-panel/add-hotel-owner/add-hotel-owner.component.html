@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header">
+      <strong>Hotel Owner Details</strong>
+    </div>
+    <div class="card-body">
+        <form action="" method="post" [formGroup]="HotelOwnerForm">
+<div class="form-group container">
+  <label for="hotelOwnerName">Hotel Owner Name</label>
+  <input type="text" id="hotelOwnerName" name="hotelOwnerName" formControlName="ownername" class="form-control" placeholder="Enter Profile.." autocomplete="hotelownerName">
+</div>
+<div class="form-group container">
+  <label for="mobilenumber">Mobile No</label>
+  <input type="text" id="mobilenumber" name="mobilenumber" formControlName="ownerphone" class="form-control" placeholder="Enter Location.." autocomplete="mobilenumber">
+</div>
+<div class="form-group container">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" class="form-control" formControlName="ownermail" placeholder="Enter Location.." autocomplete="email">
+</div>
+<div class="form-group container">
+    <label for="ownerAddL1">Address Line 1</label>
+    <input type="text" id="ownerAddL1" name="ownerAddL1" formControlName="owneraddressl1" class="form-control" placeholder="Enter Location.." autocomplete="ownerAddL1">
+  </div>
+  <div class="form-group container">
+    <label for="ownerAddL2">Address Line 2</label>
+    <input type="text" id="ownerAddL2" name="ownerAddL2" formControlName="owneraddressl2" class="form-control" placeholder="Enter Location.." autocomplete="ownerAddL2">
+  </div>
+  <div class="form-group container">
+    <label for="ownerState">State</label>
+    <input type="text" id="ownerState" name="ownerState" formControlName="ownerstate" class="form-control" placeholder="Enter Location.." autocomplete="ownerstate">
+  </div>
+  <div class="form-group container">
+    <label for="ownerCity">City</label>
+    <input type="text" id="ownerCity" name="ownerCity" formControlName="ownercity" class="form-control" placeholder="Enter Location.." autocomplete="ownercity">
+  </div>
+  <div class="form-group container">
+    <label for="ownerPincode">Pincode</label>
+    <input type="text" id="ownerPincode" name="ownerPincode" formControlName="ownerpincode" class="form-control" placeholder="Enter Location.." autocomplete="ownerpincode">
+  </div>
+  <div class="card-footer">
+    <button type="submit" class="btn btn-sm btn-primary" (click)="addHotelOwnerDetails(HotelOwnerForm.value)"><i class="fa fa-dot-circle-o"></i> Submit</button>
+   
+  </div>
+</form>
+</div>
+</div>

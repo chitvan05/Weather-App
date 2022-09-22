@@ -1,0 +1,50 @@
+<div class="card">
+<div class="row card-body container">
+    <div class="form-group col-sm-4">
+      <label for="ccmonth">City</label>
+      <select class="form-control" id="ccmonth" >
+        <option  value="" ></option>
+      </select>
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="ccyear">Hotel Name</label>
+      <select class="form-control" id="ccyear">
+        <option value=""></option>
+      </select>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="cvv">Search By Name</label>
+        <input type="text" class="form-control" id="cvv" placeholder="123">
+      </div>
+    </div>
+</div><!--/.row-->
+
+<div class="card-body container">
+    <table class="table table-bordered table-striped table-sm">
+        <thead>
+          <tr>
+            <th>Hotel Name</th>
+            <th>Address line 1</th>
+            <th>Address line 2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Pincode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let list of Hotels">
+            <td>{{list.hotelname}}</td>
+            <td>{{list.hoteladdressl1}}</td>
+            <td>{{list.hoteladdressl2}}</td>
+            <td>{{list.city}}</td>
+            <td>{{list.state}}</td>
+            <td>{{list.pincode}}</td>
+            <td><button type="button" class="btn  btn-outline-primary active fa fa-edit"></button></td>
+            <td><button type="button" class="btn  btn-outline-danger active fa fa-close"></button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+  </div>
+</div>
